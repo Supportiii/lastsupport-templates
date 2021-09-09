@@ -3,514 +3,514 @@ welcome: |
 
   Willkommen beim technischen Support Bot.
 
-  <b>Avaliable commands:</b>
+  <b>Verfügbare Befehle:</b>
 
-  /newbot - Neuen Bot hinzufügen.
-  /mybots - Bots zeigen.
+  /newbot - Neuen Bot hinzufügen
+  /mybots - Bots zeigen
 
-  /language - Sprache wechseln.
+  /language - Sprache wechseln
 
-  Für technische Unterstützung und um zu schauen, wie der Bot funktioniert, wenden Sie sich bitte an @RocketBotsBot.
+  Für technische Unterstützung und um zu schauen, wie der Bot funktioniert, wende Dich bitte an @RocketBotsBot.
 
-  News and updates: @RocketBotsNews
+  News und Updates: @RocketBotsNews
 
 common:
   btn:
-    new: |
-      🆕 New
-    refresh: |
-      🔄 Refresh
-    addbtns: |
-      ⌨ Add keyboard
-    delbtns: |
-      ️❌ Remove keyboard
-    preview: |
-      👀 Link previews: {%if preview%}On{%else%}Off{%endif%}
-    up: |
-      ⬆️
-    down: |
-      ⬇️
-    delete: |
-      ❌ Löschen
-    back: |
-      ↩️
+	new: |
+	  🆕 Neu
+	refresh: |
+	  🔄 Neustart
+	addbtns: |
+	  ⌨ Tastatur hinzufügen
+	delbtns: |
+	  ️❌ Tastatur entfernen
+	preview: |
+	  👀 LinkVorschau: {%if preview%}An{%else%}Aus{%endif%}
+	up: |
+	  ⬆️
+	down: |
+	  ⬇️
+	delete: |
+	  ❌ Löschen
+	back: |
+	  ↩️
   keyboard:
-    set: |
-      🔹 Send me keyboard for add to post in following format:
+	set: |
+	  🔹 Sendemir nun die Tastatur in folgendem Format:
 
-      <code>Caption = https://example.com/</code>
+	  <code>Titel = https://Beispiel.de/</code>
 
-      You can use from <b>1</b> to <b>12</b> buttons.
+	  Du kannst <b>1</b> bis <b>12</b> Buttons verwenden.
 
-      For cancel hit /cancel.
-    toomany: |
-      🔹 Too many buttons.
+	  Zum Abbrechen: /cancel.
+	toomany: |
+	  🔹 Zu viele Buttons..
 
-      You can use from <b>1</b> to <b>12</b> buttons.
-    error: |
-      🔹 There was error while setting keyboard probably because invalid formatting.
-      {%if error%}
-      <code>{{error}}</code>
-      {%endif%}
+	  Du kannst <b>1</b> bis <b>12</b> Buttons verwenden.
+	error: |
+	  🔹 Es gab ein Problem mit der Formatierung der Buttons
+	  {%if error%}
+	  <code>{{error}}</code>
+	  {%endif%}
 
-      Try to fix formatting and send your keyboard again or hit /cancel.
-    saved: |
-      🔹 Keyboard was saved.
+	  Versuche es noch einmal oder drücke /cancel.
+	saved: |
+	  🔹 Tastatur gespeichert
   langname: |
-    🇩🇪 Deutsch
+	🇩🇪 Deutsch
   cancelled: |
-    🔹 Abgebrochen. Was noch?
+	🔹 Abgebrochen. Was nun?
   unknown: |
-    🔹 Unbekannter Befehl.
-    Es gibt /help.
+	🔹 Unbekannter Befehl..
+	Für Hilfe drücke /help.
   unknown_bot: |
-    🔹 Unbekannter Bot.
+	🔹 Unbekannter Bot
 
 lang:
   text: |
-    🔹 Momentan spreche ich auf Deutsch. Auf welche Sprache soll ich mit Ihnen sprechen?
+	🔹 Momentan spreche ich auf Deutsch. Auf welche Sprache soll ich mit Dir sprechen?
 
-    ❓ Die Sprache wechselt nicht die Sprache des bereits ausgewählten Bots.
+	❓ Die Sprache wechselt nicht die Sprache des bereits ausgewählten Bots.
 
-    Sie können die Sprache des bereits ausgewählten Bots in den Einstellungen des Bots ändern.
+	Du kannst die Sprache des bereits ausgewählten Bots in den Einstellungen des Bots selbst ändern.
 
-    <i>Wenn ich mit Ihnen auf Ihre Sprache sprechen sollte, Sie können Ihre Übersetzung hinzufügen:</i>
+	<i>Wenn ich mit Dir auf Deiner Sprache sprechen sollte, kannst Du Deine Übersetzung hinzufügen:</i>
 
-    https://github.com/vd2org/lastsupport-templates
+	https://github.com/vd2org/lastsupport-templates
   ok: |
-    🔹 Jetzt auf Deutsch.
+	🔹 Ok, Jetzt auf Deutsch.
 
 mybots:
   bots: |
-    🔹 Ihre Bots:
+	🔹 Deine Bots:
   nobots: |
-    🔹 Du hast keine Bots.
+	🔹 Du hast keine Bots.
 
-    Um einen Bot hinzuzufügen, nützen Sie /newbot.
+	Um einen Bot hinzuzufügen, klicke auf /newbot.
   bot: |
-    {%if bot.active%}🎾{%else%}🏐️{%endif%} {{bot.username}}
+	{%if bot.active%}🎾{%else%}🏐️{%endif%} {{bot.username}}
 
 newbot:
   token: |
-    🔸 Bot hinzufügen.
+	🔸 Bot hinzufügen.
 
-    Im Anfang müssen Sie einen neuen Bot von @BotFather erstellen.
+	Am Anfang musst Du einen neuen Bot im @BotFather erstellen.
 
-    Senden Sie mir das Token von BotFather oder leiten Sie die Mitteilung mit dem Token weiter hier.
+	Sende mir den Token von BotFather oder leite die Mitteilung mit dem Token hierher weiter.
 
-    Um das Hinzufügen eines Bots abzubrechen, klicken Sie auf /cancel.
+	Um das Hinzufügen eines Bots abzubrechen, klicke auf /cancel.
   fail: |
-    🔸 ⚠️ Ich kann Ihren Bot nicht autorisieren.
+	🔸 ⚠️ Ich kann Deinen Bot nicht autorisieren.
 
-    Überprüfen Sie das gegebene Token und versuchen Sie es nochmal.
+	Überprüfe den Token und versuche es nochmal.
 
-    Um das Hinzufügen eines Bots abzubrechen, klicken Sie auf /cancel.
+	Um das Hinzufügen eines Bots abzubrechen, klicke auf /cancel.
   exist: |
-    🔸 ⚠️ Dieser Bot ist hier bereits autorisiert.
+	🔸 ⚠️ Dieser Bot ist hier bereits autorisiert.
 
-    Sie können einen Bot nicht zweimal hinzufügen.
+	Du kannst einen Bot nicht doppelt hinzufügen.
 
-    Um das Hinzufügen eines Bots abzubrechen, klicken Sie auf /cancel.
+	Um das Hinzufügen eines Bots abzubrechen, klicke auf /cancel.
   ok: |
-    🔸 Der Bot @{{bot.username}} geprüft und autorisiert.
+	🔸 Der Bot @{{bot.username}} ist nun geprüft und autorisiert.
 
-    Jetzt können Sie ihn konfigurieren.
+	Jetzt kannst Du ihn konfigurieren.
 
 manage:
   text: |
-    @{{bot.username}}
+	@{{bot.username}}
 
-    Stand: {%if bot.active%}🎾 Aktiv{%else%}🏐️ Ausgeschaltet{%endif%}
-    Erstellt: {{bot.created|elapsed}}
-    Sprache: {{bot.language}}
+	Stand: {%if bot.active%}🎾 Aktiv{%else%}🏐️ Ausgeschaltet{%endif%}
+	Erstellt: {{bot.created|elapsed}}
+	Sprache: {{bot.language}}
 
-    Users: {{bot.users_count}}
+	Nutzer: {{bot.users_count}}
 
-    Gruppe: {%if bot.group%}{%if bot.group.link%}<a href="{{bot.group.link}}">{{bot.group.title|escape}}</a>{%else%}{{bot.group.title|escape}}{%endif%}{%else%}<i>Keine</i>{%endif%}
+	Gruppe: {%if bot.group%}{%if bot.group.link%}<a href="{{bot.group.link}}">{{bot.group.title|escape}}</a>{%else%}{{bot.group.title|escape}}{%endif%}{%else%}<i>Keine</i>{%endif%}
   language:
-    language: |
-      🌏 Sprache
-    text: |
-      🔹 Sprache für @{{bot.username}}.
+	language: |
+	  🌏 Sprache
+	text: |
+	  🔹 Sprache für @{{bot.username}}.
 
-      Aktuelle Sprache: {{bot.language}}
+	  Aktuelle Sprache: {{bot.language}}
 
-      ❓ Die ausgewählte Sprache hat keinen Einfluss auf die Sprache des Bot-Konstruktors, sowie auf andere Bots
+	  ❓ Die ausgewählte Sprache hat keinen Einfluss auf die Sprache des Bot-Konstruktors, sowie auf andere Bots
   start:
-    start: |
-      ▶️ Start
-    started:
-      🔸 Der Bot @{{bot.username}} wurde gestartet. In wenigen Sekunden wird es funktionieren.
-    already: |
-      🔸 Der Bot @{{bot.username}} bereits gestartet und funktioniert.
+	start: |
+	  ▶️ Start
+	started:
+	  🔸 Der Bot @{{bot.username}} wurde gestartet. In wenigen Sekunden wird er funktionieren.
+	already: |
+	  🔸 Der Bot @{{bot.username}} ist bereits gestartet und funktioniert.
   stop:
-    stop: |
-      ⏹ Stop
-    stopped: |
-      🔸 Der Bot @{{bot.username}} wurde gestoppt. Er wird keine Meldung mehr abschicken.
-    already: |
-      🔸 Der Bot @{{bot.username}} bereits gestoppt.
+	stop: |
+	  ⏹ Stop
+	stopped: |
+	  🔸 Der Bot @{{bot.username}} wurde gestoppt. Er wird keine Meldung mehr abschicken.
+	already: |
+	  🔸 Der Bot @{{bot.username}} wurde bereits gestoppt.
   group:
-    group: |
-      👫 Gruppen Einstellungen
-    text: |
-      🔹 Sie können @{{bot.username}} in eine Gruppe hinzufügen, um nicht nur an Sie, sondern an alle Mitglieder der Gruppe zu beantworten.
+	group: |
+	  👫 Gruppen Einstellungen
+	text: |
+	  🔹 Du kannst @{{bot.username}} in eine Gruppe hinzufügen, um nicht nur an Dich, sondern an alle Mitglieder der Gruppe die Nachrichten zu senden.
 
-      Fügen Sie den Bot in eine Gruppe hinzu und führen Sie den Befehl /authorize@{{bot.username}} aus.
+	  Füge den Bot in eine Gruppe hinzu und führe den Befehl /authorize@{{bot.username}} aus.
 
-      ⚠️ Ein Bot kann nur in einer Gruppe aktiv sein. Sie können mehrere verschiedene Bots in derselbe Gruppe hinzufügen.
+	  ⚠️ Ein Bot kann nur in einer Gruppe aktiv sein. Du kannst mehrere verschiedene Bots in derselbe Gruppe hinzufügen.
 
-      Ihre Gruppe: {%if bot.group%}{%if bot.group.link%}<a href="{{bot.group.link}}">{{bot.group.title|escape}}</a>{%else%}{{bot.group.title|escape}}{%endif%}{%else%}<i>Keine</i>{%endif%}
-    leave: |
-      🚶 Deaktivieren & leave
-    leaved: |
-      ⚠️ Der Bot wurde aus der Gruppe entfernt.
+	  Deine Gruppe: {%if bot.group%}{%if bot.group.link%}<a href="{{bot.group.link}}">{{bot.group.title|escape}}</a>{%else%}{{bot.group.title|escape}}{%endif%}{%else%}<i>Keine</i>{%endif%}
+	leave: |
+	  🚶 Deaktivieren & Verlassen
+	leaved: |
+	  ⚠️ Der Bot wurde aus der Gruppe entfernt.
   types:
-    btn: |
-      💬 Meldungstypen
-    text: |
-      🔹 Meldungstypen für @{{bot.username}}.
+	btn: |
+	  💬 Meldungstypen
+	text: |
+	  🔹 Meldungstypen für @{{bot.username}}.
 
-      ❓ Use delay if you users sends messages though defective inline bots.
+	  ❓ Verwende die Verzögerung, wenn deine Nutzer Nachrichten durch defekte InlineBots senden.
 
-      Hier können Sie Meldungstypen auswählen, die Benutzer an Ihren Bot senden können.
-    types:
-      text: |
-        {%if 'text' in bot.types%}✅{%else%}❌{%endif%} 📝 Texte
-      audio: |
-        {%if 'audio' in bot.types%}✅{%else%}❌{%endif%} 💽 Audios
-      document: |
-        {%if 'document' in bot.types%}✅{%else%}❌{%endif%} 📃 Dokumenten
-      animation: |
-        {%if 'animation' in bot.types%}✅{%else%}❌{%endif%} 🐈 Animationen
-      photo: |
-        {%if 'photo' in bot.types%}✅{%else%}❌{%endif%} 🖼️ Fotos
-      sticker: |
-        {%if 'sticker' in bot.types%}✅{%else%}❌{%endif%} ❤️ Aufkleber
-      video: |
-        {%if 'video' in bot.types%}✅{%else%}❌{%endif%} 📺 Videos
-      voice: |
-        {%if 'voice' in bot.types%}✅{%else%}❌{%endif%} 🎧 Sprachnachrichten
-      video_note: |
-        {%if 'video_note' in bot.types%}✅{%else%}❌{%endif%} 🤳 Videonachrichten
-      contact: |
-        {%if 'contact' in bot.types%}✅{%else%}❌{%endif%} 📇 Kontakten
-      location: |
-        {%if 'location' in bot.types%}✅{%else%}❌{%endif%} 🛰️ Standorte
-      venue: |
-        {%if 'venue' in bot.types%}✅{%else%}❌{%endif%} 🏬 Veranstaltungsorte
-      forwards: |
-        {%if bot.allow_forwards%}✅{%else%}❌{%endif%} ↪️ Weiterleiten zulassen
-      delay: |
-        {%if bot.message_delay%}✅{%else%}❌{%endif%} ⏸ Delay
+	  Hier kannst Du Meldungstypen auswählen, die Benutzer an Deinen Bot senden können.
+	types:
+	  text: |
+		{%if 'text' in bot.types%}✅{%else%}❌{%endif%} 📝 Texte
+	  audio: |
+		{%if 'audio' in bot.types%}✅{%else%}❌{%endif%} 💽 Audios
+	  document: |
+		{%if 'document' in bot.types%}✅{%else%}❌{%endif%} 📃 Dokumente
+	  animation: |
+		{%if 'animation' in bot.types%}✅{%else%}❌{%endif%} 🐈 Animationen
+	  photo: |
+		{%if 'photo' in bot.types%}✅{%else%}❌{%endif%} 🖼️ Fotos
+	  sticker: |
+		{%if 'sticker' in bot.types%}✅{%else%}❌{%endif%} ❤️ Sticker
+	  video: |
+		{%if 'video' in bot.types%}✅{%else%}❌{%endif%} 📺 Videos
+	  voice: |
+		{%if 'voice' in bot.types%}✅{%else%}❌{%endif%} 🎧 Sprachnachrichten
+	  video_note: |
+		{%if 'video_note' in bot.types%}✅{%else%}❌{%endif%} 🤳 Videonachrichten
+	  contact: |
+		{%if 'contact' in bot.types%}✅{%else%}❌{%endif%} 📇 Kontakte
+	  location: |
+		{%if 'location' in bot.types%}✅{%else%}❌{%endif%} 🛰️ Standorte
+	  venue: |
+		{%if 'venue' in bot.types%}✅{%else%}❌{%endif%} 🏬 Standorte
+	  forwards: |
+		{%if bot.allow_forwards%}✅{%else%}❌{%endif%} ↪️ Weiterleiten zulassen
+	  delay: |
+		{%if bot.message_delay%}✅{%else%}❌{%endif%} ⏸ Verzögerung
   messages: |
-    📝 Meldungen Einstellungen
+	📝 Meldungen Einstellungen
   export:
-    btn: |
-      ⏬ Export
-    text: |
-      🔹 Export for @{{bot.username}}
-      {%if not export%}
-      Nothing has been exported yet. 😓
-      {%else%}
-      Last export was requested at {{export.created | elapsed}} ago.
+	btn: |
+	  ⏬ Export
+	text: |
+	  🔹 Export für @{{bot.username}}
+	  {%if not export%}
+	  Es wurde noch nichts exportiert. 😓
+	  {%else%}
+	  Der letzte Export wurde vor {{export.created | elapsed}} angefordert.
 
-      Status: <b>{{export.state|upper}}</b>
-      {%endif%}
-    request: |
-      ⏬ Request export
-    wait: |
-      ⚠️ Please wait {{to | remaining}} for the next request.
-    only_one: |
-      ⚠️ Only one export can be active at a time.
+	  Status: <b>{{export.state|upper}}</b>
+	  {%endif%}
+	request: |
+	  ⏬ Anfrage gesendet
+	wait: |
+	  ⚠️ Bitte warte {{to | remaining}} für die nächste Anfrage.
+	only_one: |
+	  ⚠️ Es kann zurzeit nur eine Anfrage gesendet werden.
   broadcast: |
-    🎙️ Broadcast-Meldungen senden
+	🎙️ Broadcast-Meldungen senden
   qreplies: |
-    🗣 Quick replies
+	🗣 Schnell-Antworten
   token:
-    btn: |
-      🔑 Token aktualisieren
-    active: |
-      ⚠️ Den Bot soll vor dem Aktualisieren des Tokens gestoppen werden!
-    enter: |
-      🔸 Aktualisieren des Tokens.
+	btn: |
+	  🔑 Token aktualisieren
+	active: |
+	  ⚠️ Den Bot soll vor dem Aktualisieren des Tokens gestoppen werden!
+	enter: |
+	  🔸 Aktualisieren des Tokens.
 
-      Senden Sie mir das Token von BotFather oder leiten Sie die Mitteilung mit dem Token weiter hier.
+	  Sende mir den Token von BotFather oder leite die Mitteilung mit dem Token weiter hier.
 
-      Um das Aktualisieren des Tokens abzubrechen, klicken Sie auf /cancel.
-    otherbot: |
-      🔸 ⚠️ Sie können kein Token eines anderen Bots verwenden.
+	  Um das Aktualisieren des Tokens abzubrechen, klicke auf /cancel.
+	otherbot: |
+	  🔸 ⚠️ Du kannst keinen Token eines anderen Bots verwenden.
 
-      Überprüfen Sie das gesendete Token und versuchen Sie es nochmal.
+	  Überprüfe den gesendeten Token und versuche es erneut.
 
-      Um das Aktualisieren des Tokens abzubrechen, klicken Sie auf /cancel.
-    updated: |
-      🔸 Das Token wurde erfolgreich aktualisiert.
+	  Um das Aktualisieren des Tokens abzubrechen, klicke auf /cancel.
+	updated: |
+	  🔸 Der Token wurde erfolgreich aktualisiert.
   delete:
-    text: |
-      🔸 Den Bot @{{bot.username}} vollständig löschen?
+	text: |
+	  🔸 Den Bot @{{bot.username}} vollständig löschen?
 
-      ⚠️ <b>Achtung!</b> Dadurch werden Einstellungen, Verlauf, Statistik und alle mit dem Bot verbundenen Daten entfernt!
+	  ⚠️ <b>Achtung!</b> Dadurch werden Einstellungen, Verlauf, Statistik und alle mit dem Bot verbundenen Daten entfernt!
 
-      ⚠️ <b>Achtung!</b> Diese Aktion kann nicht rückgängig gemacht werden!
-      {%if step=='two'%}
-      <b>📛📛📛 Sind Sie wirklich sicher ?!</b>{%endif%}
-    deleted: |
-      🔸 Der Bot @{{bot.username}} wurde gelöscht.
-    positives:
-      1: Ja.
-      2: Ja, sicher!
-    negatives:
-      1: Nein!
-      2: Auf keinen Fall!
-      3: Niemals!
-      4: Ich habe meine Meinung geändert!
-      5: Nächstes Mal!
-      6: Nein! Nein! Nein!
-      7: Ne!
-      8: Das ist ein Fehler!
+	  ⚠️ <b>Achtung!</b> Diese Aktion kann nicht rückgängig gemacht werden!
+	  {%if step=='two'%}
+	  <b>📛📛📛 BIST DU WIRKLICH SICHER?!</b>{%endif%}
+	deleted: |
+	  🔸 Der Bot @{{bot.username}} wurde gelöscht.
+	positives:
+	  1: Ja.
+	  2: Ja, sicher!
+	negatives:
+	  1: Nein!
+	  2: Auf keinen Fall!
+	  3: Niemals!
+	  4: Ich habe meine Meinung geändert!
+	  5: Nächstes Mal!
+	  6: Nein! Nein! Nein!
+	  7: Ne!
+	  8: Das ist ein Fehler!
   auth: |
-    ‼️‼️ Ihren Bot @{{bot.username}} wurde wegen fehlgeschlagener Autorisierung angehalten.
+	‼️‼️ Dein Bot @{{bot.username}} wurde wegen fehlgeschlagener Autorisierung angehalten.
 
-    Um mit der Arbeit fortzufahren, aktualisieren Sie den Token des Bots nochmal.
+	Um mit der Arbeit fortzufahren, aktualisiere den Token des Bots erneut.
 
 group:
   welcome: |
-    🔹 Hallo! Ich bin technischer Support-Bot.
+	🔹 Hallo! Ich bin der technischer Support-Bot.
 
-    Um mich in dieser Gruppe hinzuzufügen, muss der Bot-Besitzer den Befehl /authorize@{{bot.username}} ausführen.
+	Um mich in dieser Gruppe hinzuzufügen, muss der Bot-Besitzer den Befehl /authorize@{{bot.username}} ausführen.
   auth:
-    ok: |
-      🔹 Ich bin zu dieser Gruppe hinzufügt. Nun kommen meine Meldungen zu dieser Gruppe.
+	ok: |
+	  🔹 Ich bin zu dieser Gruppe hinzufügt. Nun kommen meine Meldungen in diese Gruppe.
 
-      Für die Hilfe klicken Sie auf /help.
-    already: |
-      🔹 Ich bin bereits in dieser Gruppe hinzufügt.
-    other: |
-      🔹 Ich bin in einer andere Gruppe hinzufügt.
-    deny: |
-      🔹 ⚠️ Nur der Besitzer des Bots kann ihn hinzufügen.
-    removed: |
-      🔹 Hinzufügung gelöscht.
+	  Für die Hilfe klicke auf /help.
+	already: |
+	  🔹 Ich bin bereits in dieser Gruppe hinzufügt.
+	other: |
+	  🔹 Ich bin in einer anderen Gruppe hinzufügt.
+	deny: |
+	  🔹 ⚠️ Nur der Besitzer des Bots kann ihn hinzufügen.
+	removed: |
+	  🔹 Hinzufügung abgebrochen.
   channel: |
-    🔹 ⚠️ Dies ist nicht zur Verwendung in Kanälen vorgesehen!
+	🔹 ⚠️ Dies ist nicht zur Verwendung in Kanälen vorgesehen!
 
 member:
   btn:
-    close: |
-      ❌
-    user: |
-      🙇‍♂️ User
-    ban: |
-      🚷 Ban
-    unban: |
-      🦾 Unban
-    deleteall: |
-      🚫 Delete all
-    past_msg: |
-      ⤴️
-    digest: |
-      📃 Digest
+	close: |
+	  ❌
+	user: |
+	  🙇‍♂️ Nutzer
+	ban: |
+	  🚷 Ban
+	unban: |
+	  🦾 Entsperren
+	deleteall: |
+	  🚫 Alles löschen
+	past_msg: |
+	  ⤴️
+	digest: |
+	  📃 Auszug
   help: |
-    🔹 Wie benutzt man den Bot?
+	🔹 Wie benutzt man den Bot?
 
-    Fragen zu Ihrem Bot werden hier gesendet.
+	Fragen zu Deinem Bot werden hier gesendet.
 
-    Um die Fragen zu beantworten, schicken Sie ihre Antwort als Replay zurück.
+	Um die Fragen zu beantworten, schicke Deine Antwort als Replay zurück.
 
-    /info Als Antwort werden Informationen über den Benutzer und seine Einstellungen angezeigt.
+	/info Als Antwort werden Informationen über den Benutzer und seine Einstellungen angezeigt.
   fail: |
-    🔹 ⚠️ Ich kann keine Informationen über den Benutzer erhalten. Sendung abgebrochen.
+	🔹 ⚠️ Ich kann keine Informationen über den Benutzer erhalten. Sendung abgebrochen.
   bot_baned: |
-    🔹 ⚠️ The user has blocked the bot. Message not sent.
+	🔹 ⚠️ Der Benutzer hat den Bot blockiert. Nachricht nicht gesendet.
   failcmd: |
-    🔹 ⚠️ Ich kann keine Informationen über diese Mitteilung erhalten.
+	🔹 ⚠️ Ich kann keine Informationen über diese Mitteilung erhalten.
   info: |
-    {{request.user_id | er}} <a href="tg://user?id={{request.user_id}}">&{{request.user_id}}</a> {{request.user.first_name | escape}}{%if request.user.last_name%} {{request.user.last_name | escape}}{%endif%}
+	{{request.user_id | er}} <a href="tg://user?id={{request.user_id}}">&{{request.user_id}}</a> {{request.user.first_name | escape}}{%if request.user.last_name%} {{request.user.last_name | escape}}{%endif%}
   userfail: |
-    🔹 ⚠️ Ich kann keine Informationen über den Benutzer erhalten.
+	🔹 ⚠️ Ich kann keine Informationen über den Benutzer erhalten.
   user: |
-    {{user.user_id | er}} <a href="tg://user?id={{user.user_id}}">&{{user.user_id}}</a> {{user.first_name | escape}}{%if user.last_name%} {{user.last_name | escape}}{%endif%}
+	{{user.user_id | er}} <a href="tg://user?id={{user.user_id}}">&{{user.user_id}}</a> {{user.first_name | escape}}{%if user.last_name%} {{user.last_name | escape}}{%endif%}
 
-    <b>🌎 Sprache</b>: {{user.language_code}}
-    <b>🗽 Erstellt:</b> {{user.created|elapsed}} <b>ago</b>
-    <b>🕐 Letzte Meldung:</b> {{user.last_message|elapsed}} <b>ago</b>
-    <b>📥 Meldungen</b>: {{requests}}
-    <b>📤 Replies</b>: {{responses}}
+	<b>🌎 Sprache</b>: {{user.language_code}}
+	<b>🗽 Erstellt</b>: <b>vor</b> {{user.created|elapsed}}
+	<b>🕐 Letzte Meldung:</b> <b>vor</b> {{user.last_message|elapsed}}
+	<b>📥 Nachrichten</b>: {{requests}}
+	<b>📤 Antworten</b>: {{responses}}
 
-    {%if user.is_banned%}<b>⚠️ Verbieten!</b>{%endif%}
+	{%if user.is_banned%}<b>⚠️ Verbieten!</b>{%endif%}
   ban: |
-    🔹 Benutzer {% if user.is_banned%}⚠️ banned{%else%}unbanned{%endif%}!
+	🔹 Benutzer {% if user.is_banned%}⚠️ gesperrt{%else%}entsperrt{%endif%}!
   digest: |
-    🔹 Digest for {{user.user_id|er}} <a href="tg://user?id={{user.user_id}}">&{{user.user_id}}</a> {{user.first_name | escape}}{%if user.last_name%} {{user.last_name | escape}}{%endif%}:
-    {%for msg in msgs%}
-    [{%if msg.msg_link_url%}<a href="{{msg.msg_link_url}}">{%endif%}{{msg.time|elapsed}}{%if msg.msg_link_url%}</a>{%endif%}] {%if msg.is_response%}🗣{%else%}{{user.user_id|er}}{%endif%}: {%if msg.msg.type == 'text'%}{{msg.msg.text|untag|crop}}{%else%}🏞 Media{%endif%}{%endfor%}
+	🔹 Auszug für {{user.user_id|er}} <a href="tg://user?id={{user.user_id}}">&{{user.user_id}}</a> {{user.first_name | escape}}{%if user.last_name%} {{user.last_name | escape}}{%endif%}:
+	{%for msg in msgs%}
+	[{%if msg.msg_link_url%}<a href="{{msg.msg_link_url}}">{%endif%}{{msg.time|elapsed}}{%if msg.msg_link_url%}</a>{%endif%}] {%if msg.is_response%}🗣{%else%}{{user.user_id|er}}{%endif%}: {%if msg.msg.type == 'text'%}{{msg.msg.text|untag|crop}}{%else%}🏞 Media{%endif%}{%endfor%}
 
 
 user:
   welcome: |
-    🔹 Willkommen!
+	🔹 Willkommen!
 
-    Schicken Sie mir Ihre Frage un ich leite sie an den technischen Support weiter.
+	Schicke mir Deine Frage und ich leite sie an den technischen Support weiter.
   sent: |
-    🔸 Ihre Frage wurde akzeptiert.
+	🔸 Deine Frage wurde akzeptiert.
   forward: |
-    🔹 ⚠️ Sendung fehlgeschlagen.
+	🔹 ⚠️ Sendung fehlgeschlagen.
   type: |
-    🔹 ⚠️ Ihre Frage wurde leider nicht akzeptiert.
+	🔹 ⚠️ Deine Frage wurde leider nicht akzeptiert.
 
-    Sie können folgende Meldungstypen senden:
+	Du können folgende Meldungstypen senden:
 
-    $types
+	$types
   types: |
-    {%if 'text' in bot.types%}📝 Text{{'\n'}}{%endif-%}
-    {%if 'audio' in bot.types%}💽 Audio{{'\n'}}{%endif-%}
-    {%if 'document' in bot.types%}📃 Dokument{{'\n'}}{%endif-%}
-    {%if 'animation' in bot.types%}🐈 Animation{{'\n'}}{%endif-%}
-    {%if 'photo' in bot.types%}🖼️ Foto{{'\n'}}{%endif-%}
-    {%if 'sticker' in bot.types%}❤️ Aufkleber{{'\n'}}{%endif-%}
-    {%if 'video' in bot.types%}📺 Video{{'\n'}}{%endif-%}
-    {%if 'voice' in bot.types%}🎧 Sprachnachricht{{'\n'}}{%endif-%}
-    {%if 'video_note' in bot.types%}🤳 Videonachricht{{'\n'}}{%endif-%}
-    {%if 'contact' in bot.types%}📇 Kontakt{{'\n'}}{%endif-%}
-    {%if 'location' in bot.types%}🛰️ Standort{{'\n'}}{%endif-%}
-    {%if 'venue' in bot.types%}🏬 Veranstaltungsort{%endif-%}
+	{%if 'text' in bot.types%}📝 Text{{'\n'}}{%endif-%}
+	{%if 'audio' in bot.types%}💽 Audio{{'\n'}}{%endif-%}
+	{%if 'document' in bot.types%}📃 Dokument{{'\n'}}{%endif-%}
+	{%if 'animation' in bot.types%}🐈 Animation{{'\n'}}{%endif-%}
+	{%if 'photo' in bot.types%}🖼️ Foto{{'\n'}}{%endif-%}
+	{%if 'sticker' in bot.types%}❤️ Sticker{{'\n'}}{%endif-%}
+	{%if 'video' in bot.types%}📺 Video{{'\n'}}{%endif-%}
+	{%if 'voice' in bot.types%}🎧 Sprachnachricht{{'\n'}}{%endif-%}
+	{%if 'video_note' in bot.types%}🤳 Videonachricht{{'\n'}}{%endif-%}
+	{%if 'contact' in bot.types%}📇 Kontakt{{'\n'}}{%endif-%}
+	{%if 'location' in bot.types%}🛰️ Standort{{'\n'}}{%endif-%}
+	{%if 'venue' in bot.types%}🏬 Ort{%endif-%}
 
 messages:
   text: |
-    🔹 Antworteneinstellungen für @{{bot.username}}.
+	🔹 Antworteneinstellungen für @{{bot.username}}.
 
-    Hier können Sie Ihre Antworte festlegen.
+	Hier kannst Du Deine Antworten festlegen.
 
-    ❓ Sie können die Wartezeit einstellen, nach der der Benutzer eine Meldung erhält, dass seine Frage akzeptiert wurde.
-    ❓ The following variables can be used in all messages:
-       ▪️ <code>$first_name</code> - user's first name
-       ▪️ <code>$last_name</code> - user's second name
-       ▪️ <code>$full_name</code> - first+second name
-       ▪️ <code>$types</code> - list of supported message types
+	❓ Du kannst die Wartezeit einstellen, nach der der Benutzer eine Meldung erhält, dass seine Frage akzeptiert wurde.
+	❓ Die folgenden Variablen können in allen Meldungen verwendet werden:
+	   ▪️ <code>$first_name</code> - Vorname des Benutzers
+	   ▪️ <code>$last_name</code> - Nachname des Benutzers
+	   ▪️ <code>$full_name</code> - Ganzer Name des Benutzers
+	   ▪️ <code>$types</code> - Liste aller Nachrichten-Typen
 
-    🔹 Wählen Sie die entsprechende Antwort von unten aus, um sie zu bearbeiten oder zurückzusetzen.
+	🔹 Wähle die entsprechende Antwort von unten aus, um sie zu bearbeiten oder zurückzusetzen.
   edition: |
-    🔹 Bearbeiten `{{T('messages/select/'+selected)}}` für @{{bot.username}}.
+	🔹 Bearbeiten `{{T('messages/select/'+selected)}}` für @{{bot.username}}.
 
-    Senden Sie eine neue Meldung und diese wird gespeichert.
-    Um das Bearbeiten abzubrechen, klicken Sie auf /cancel.
+	Sende eine neue Meldung und diese wird gespeichert.
+	Um das Bearbeiten abzubrechen, klicke auf /cancel.
   error: |
-    🔹 Beim Versenden ist ein Fehler aufgetreten, wahrscheinlich aufgrund einer ungültigen Formatierung.
+	🔹 Beim Versenden ist ein Fehler aufgetreten, wahrscheinlich aufgrund einer ungültigen Formatierung.
 
-    <code>{{error}}</code>
+	<code>{{error}}</code>
 
-    🔹 Prüfen Sie Ihre Formatierung und versuchen Sie nochmal.
+	🔹 Prüfe Deine Formatierung und versuche es noch einmal.
 
-    🔹 Um das Bearbeiten abzubrechen, klicken Sie auf /cancel.
+	🔹 Um das Bearbeiten abzubrechen, klicke auf /cancel.
   edit: |
-    ✍️ Bearbeiten
+	✍️ Bearbeiten
   revert: |
-    🔙 Zurückkehren
+	🔙 Zurück
   sent:
-    header: |
-      🕔 Wiederholen jeden:
-    value: |
-      {%if bot.sent_delay == 0%}Immer{%else%}{{bot.sent_delay}}m{%endif%}
-    minus: |
-      ⏪
-    plus: |
-      ⏩
+	header: |
+	  🕔 Wiederholen aller:
+	value: |
+	  {%if bot.sent_delay == 0%}Immer{%else%}{{bot.sent_delay}}m{%endif%}
+	minus: |
+	  ⏪
+	plus: |
+	  ⏩
   select:
-    welcome: |
-      {%if selected%}🔺️ {%endif%}👋 Willkommen
-    sent: |
-      {%if selected%}🔺️ {%endif%}📨 Senden
-    forward: |
-      {%if selected%}🔺️ {%endif%}⏩ Weiterleiten
-    type: |
-      {%if selected%}🔺️ {%endif%}🆎 Typ
+	welcome: |
+	  {%if selected%}🔺️ {%endif%}👋 Willkommen
+	sent: |
+	  {%if selected%}🔺️ {%endif%}📨 Senden
+	forward: |
+	  {%if selected%}🔺️ {%endif%}⏩ Weiterleiten
+	type: |
+	  {%if selected%}🔺️ {%endif%}🆎 Typ
 
 broadcast:
   btn:
-    view: |
-      👀 View
-    start: |
-      ▶️ Start
-    pause: |
-      ⏸ Pause
-    cancel: |
-      ❌ Cancel
-    archive: |
-      📚 Archive
+	view: |
+	  👀 Ansehen
+	start: |
+	  ▶️ Start
+	pause: |
+	  ⏸ Pause
+	cancel: |
+	  ❌ Abbrechen
+	archive: |
+	  📚 Archiv
 
   states:
-    new: |
-      🆕 NEW
-    started: |
-      ▶️ RUNNING
-    paused: |
-      ⏸ PAUSED
-    cancelled: |
-      ❌ CANCELLED
-    finished: |
-      ☑️ FINISHED
+	new: |
+	  🆕 NEU
+	started: |
+	  ▶️ AKTIV
+	paused: |
+	  ⏸ PAUSIERT
+	cancelled: |
+	  ❌ ABGEBROCHEN
+	finished: |
+	  ☑️ BEENDET
 
   unknown: |
-    🔸 Unknown broadcast!
+	🔸 Unbekannter Broadcast!
 
   exist: |
-    🔸 Only one active broadcast can be created!
+	🔸 Es kann nur ein aktiver Broadcast erstellt werden!
 
   main: |
-    🔹 Broadcast for @{{bot.username}}
-    {%if current%}
-    Broadcast: #{{current._id}}
-    Created: <b>{{current.created|elapsed}}</b>{%if current.started%}
-    Started: <b>{{current.started|elapsed(show_seconds=True)}}</b>{%endif%}{%if current.finished%}
-    Finished: <b>{{current.finished|elapsed}}</b>{%endif%}
+	🔹 Broadcast für @{{bot.username}}
+	{%if current%}
+	Broadcast: #{{current._id}}
+	Erstellt: <b>{{current.created|elapsed}}</b>{%if current.started%}
+	Gestartet: <b>{{current.started|elapsed(show_seconds=True)}}</b>{%endif%}{%if current.finished%}
+	Beendet: <b>{{current.finished|elapsed}}</b>{%endif%}
 
-    <b>{{T('broadcast/states/'+current.state)}}</b>{%if stat%}
+	<b>{{T('broadcast/states/'+current.state)}}</b>{%if stat%}
 
-    Sent: <b>{{stat.sent}}</b> of <b>{{stat.total}}</b>
-    Errors: <b>{{stat.errors}}</b>{%endif%}
-    {%else%}
-    No active broadcasts yet.
+	Gesendet: <b>{{stat.sent}}</b> of <b>{{stat.total}}</b>
+	Fehler: <b>{{stat.errors}}</b>{%endif%}
+	{%else%}
+	Aktuell keine aktiven Broadcasts
 
-    ❓ Only one active broadcast can be created at same time.
+	❓ Es kann nur ein aktiver Broadcast zur gleichen Zeit erstellt werden!
 
-    ❓ Broadcast commands(start, pause, stop) can take up to one minute to process.
+	❓ Die Verarbeitung von Broadcast-Befehlen (Start, Pause, Stopp) kann bis zu einer Minute dauern.
 
-    ❓ Finished broadcasts will be moved to archive.
-    {%endif%}
+	❓ Beendete Sendungen werden ins Archiv verschoben.
+	{%endif%}
   archive: |
-    🔹 Boradcast archive for @{{bot.username}}
+	🔹 Boradcast-Archiv für @{{bot.username}}
   new: |
-    🔸 New broadcast for @{{bot.username}}
+	🔸 Neuer Broadcast für @{{bot.username}}
 
-    Send me new message or hit /cancel.
+	Sende die Nachricht oder brich die Prozedur mit /cancel ab.
   notsupport: |
-    🔸 Bot supports only text messages. Try again or hit /cancel.
+	🔸 Der Bot unterstützt nur Textnachrichten. Versuche es erneut oder drücke /cancel.
   error: |
-    🔹 There was an error while creating post probably because invalid formatting.
+	🔹 Beim Erstellen des Beitrags ist ein Fehler aufgetreten, wahrscheinlich wegen ungültiger Formatierung.
 
-    <code>{{error}}</code>
+	<code>{{error}}</code>
 
-    🔹 Try to fix formatting and send your post again or hit /cancel.
+	🔹 Versuche, die Formatierung zu korrigieren und sende deinen Beitrag erneut oder drücke auf /cancel.
   created: |
-    🔸 Your new broadcast was created.
+	🔸 Dein neuer Boradcast wurde erstellt.
   cancelled: |
-    🔸 Your new broadcast #{{broadcast._id}} was cancelled.
+	🔸 Dein neuer Boradcast #{{broadcast._id}} wurde entfernt.
   started: |
-    🔸 Your broadcast #{{broadcast._id}} was started.
+	🔸 Dein Boradcast #{{broadcast._id}} wurde gestartet.
   paused: |
-    🔸 Your broadcast #{{broadcast._id}} was paused.
+	🔸 Dein Boradcast #{{broadcast._id}} wurde pausiert.
 
 qreplies:
   text: |
-    🔹 Quick replies for @{{bot.username}}
+	🔹 Schnell-Antworten für @{{bot.username}}
   new: |
-    🔸 New quick reply for @{{bot.username}}
+	🔸 Neue Schnell-Antwort für @{{bot.username}}
 
-    Send me new message or hit /cancel.
+	Sende mir die Nachricht oder klicke /cancel.
   reply: |
-    🔸 Quick reply ...
+	🔸 Schnell-Antwort ...
   not_found: |
-    ⚠️ Quick reply was not found!
+	⚠️ Schnell-Antwort nicht gefunden...
   deleted: |
-    🔹 Quick reply is deleted.
+	🔹 Schnell-Antwort gelöscht!
