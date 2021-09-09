@@ -3,29 +3,29 @@ welcome: |
 
   Willkommen beim technischen Support Bot.
 
-  <b>Avaliable commands:</b>
+  <b>Verfügbare Befehle:</b>
 
-  /newbot - Neuen Bot hinzufügen.
-  /mybots - Bots zeigen.
+  /newbot - Neuen Bot hinzufügen
+  /mybots - Bots zeigen
 
-  /language - Sprache wechseln.
+  /language - Sprache wechseln
 
-  Für technische Unterstützung und um zu schauen, wie der Bot funktioniert, wenden Sie sich bitte an @RocketBotsBot.
+  Für technische Unterstützung und um zu schauen, wie der Bot funktioniert, wende Dich bitte an @RocketBotsBot.
 
-  News and updates: @RocketBotsNews
+  News und Updates: @RocketBotsNews
 
 common:
   btn:
     new: |
-      🆕 New
+      🆕 Neu
     refresh: |
-      🔄 Refresh
+      🔄 Neustart
     addbtns: |
-      ⌨ Add keyboard
+      ⌨ Tastatur hinzufügen
     delbtns: |
-      ️❌ Remove keyboard
+      ️❌ Tastatur entfernen
     preview: |
-      👀 Link previews: {%if preview%}On{%else%}Off{%endif%}
+      👀 LinkVorschau: {%if preview%}An{%else%}Aus{%endif%}
     up: |
       ⬆️
     down: |
@@ -36,57 +36,57 @@ common:
       ↩️
   keyboard:
     set: |
-      🔹 Send me keyboard for add to post in following format:
+      🔹 Sendemir nun die Tastatur in folgendem Format:
 
-      <code>Caption = https://example.com/</code>
+      <code>Titel = https://Beispiel.de/</code>
 
-      You can use from <b>1</b> to <b>12</b> buttons.
+      Du kannst <b>1</b> bis <b>12</b> Buttons verwenden.
 
-      For cancel hit /cancel.
+      Zum Abbrechen: /cancel.
     toomany: |
-      🔹 Too many buttons.
+      🔹 Zu viele Buttons..
 
-      You can use from <b>1</b> to <b>12</b> buttons.
+      Du kannst <b>1</b> bis <b>12</b> Buttons verwenden.
     error: |
-      🔹 There was error while setting keyboard probably because invalid formatting.
+      🔹 Es gab ein Problem mit der Formatierung der Buttons
       {%if error%}
       <code>{{error}}</code>
       {%endif%}
 
-      Try to fix formatting and send your keyboard again or hit /cancel.
+      Versuche es noch einmal oder drücke /cancel.
     saved: |
-      🔹 Keyboard was saved.
+      🔹 Tastatur gespeichert
   langname: |
     🇩🇪 Deutsch
   cancelled: |
-    🔹 Abgebrochen. Was noch?
+    🔹 Abgebrochen. Was nun?
   unknown: |
-    🔹 Unbekannter Befehl.
-    Es gibt /help.
+    🔹 Unbekannter Befehl..
+    Für Hilfe drücke /help.
   unknown_bot: |
-    🔹 Unbekannter Bot.
+    🔹 Unbekannter Bot
 
 lang:
   text: |
-    🔹 Momentan spreche ich auf Deutsch. Auf welche Sprache soll ich mit Ihnen sprechen?
+    🔹 Momentan spreche ich auf Deutsch. Auf welche Sprache soll ich mit Dir sprechen?
 
     ❓ Die Sprache wechselt nicht die Sprache des bereits ausgewählten Bots.
 
-    Sie können die Sprache des bereits ausgewählten Bots in den Einstellungen des Bots ändern.
+    Du kannst die Sprache des bereits ausgewählten Bots in den Einstellungen des Bots selbst ändern.
 
-    <i>Wenn ich mit Ihnen auf Ihre Sprache sprechen sollte, Sie können Ihre Übersetzung hinzufügen:</i>
+    <i>Wenn ich mit Dir auf Deiner Sprache sprechen sollte, kannst Du Deine Übersetzung hinzufügen:</i>
 
     https://github.com/vd2org/lastsupport-templates
   ok: |
-    🔹 Jetzt auf Deutsch.
+    🔹 Ok, Jetzt auf Deutsch.
 
 mybots:
   bots: |
-    🔹 Ihre Bots:
+    🔹 Deine Bots:
   nobots: |
     🔹 Du hast keine Bots.
 
-    Um einen Bot hinzuzufügen, nützen Sie /newbot.
+    Um einen Bot hinzuzufügen, klicke auf /newbot.
   bot: |
     {%if bot.active%}🎾{%else%}🏐️{%endif%} {{bot.username}}
 
@@ -94,27 +94,27 @@ newbot:
   token: |
     🔸 Bot hinzufügen.
 
-    Im Anfang müssen Sie einen neuen Bot von @BotFather erstellen.
+    Im Anfang musst Du einen neuen Bot im @BotFather erstellen.
 
-    Senden Sie mir das Token von BotFather oder leiten Sie die Mitteilung mit dem Token weiter hier.
+    Sende mir den Token von BotFather oder leite die Mitteilung mit dem Token hierher weiter.
 
-    Um das Hinzufügen eines Bots abzubrechen, klicken Sie auf /cancel.
+    Um das Hinzufügen eines Bots abzubrechen, klicke auf /cancel.
   fail: |
-    🔸 ⚠️ Ich kann Ihren Bot nicht autorisieren.
+    🔸 ⚠️ Ich kann Deinen Bot nicht autorisieren.
 
-    Überprüfen Sie das gegebene Token und versuchen Sie es nochmal.
+    Überprüfe den Token und versuche es nochmal.
 
-    Um das Hinzufügen eines Bots abzubrechen, klicken Sie auf /cancel.
+    Um das Hinzufügen eines Bots abzubrechen, klicke auf /cancel.
   exist: |
     🔸 ⚠️ Dieser Bot ist hier bereits autorisiert.
 
-    Sie können einen Bot nicht zweimal hinzufügen.
+    Du kannst einen Bot nicht doppelt hinzufügen.
 
-    Um das Hinzufügen eines Bots abzubrechen, klicken Sie auf /cancel.
+    Um das Hinzufügen eines Bots abzubrechen, klicke auf /cancel.
   ok: |
-    🔸 Der Bot @{{bot.username}} geprüft und autorisiert.
+    🔸 Der Bot @{{bot.username}} ist nun geprüft und autorisiert.
 
-    Jetzt können Sie ihn konfigurieren.
+    Jetzt kannst Du ihn konfigurieren.
 
 manage:
   text: |
@@ -124,7 +124,7 @@ manage:
     Erstellt: {{bot.created|elapsed}}
     Sprache: {{bot.language}}
 
-    Users: {{bot.users_count}}
+    Nutzer: {{bot.users_count}}
 
     Gruppe: {%if bot.group%}{%if bot.group.link%}<a href="{{bot.group.link}}">{{bot.group.title|escape}}</a>{%else%}{{bot.group.title|escape}}{%endif%}{%else%}<i>Keine</i>{%endif%}
   language:
@@ -140,29 +140,29 @@ manage:
     start: |
       ▶️ Start
     started:
-      🔸 Der Bot @{{bot.username}} wurde gestartet. In wenigen Sekunden wird es funktionieren.
+      🔸 Der Bot @{{bot.username}} wurde gestartet. In wenigen Sekunden wird er funktionieren.
     already: |
-      🔸 Der Bot @{{bot.username}} bereits gestartet und funktioniert.
+      🔸 Der Bot @{{bot.username}} ist bereits gestartet und funktioniert.
   stop:
     stop: |
       ⏹ Stop
     stopped: |
       🔸 Der Bot @{{bot.username}} wurde gestoppt. Er wird keine Meldung mehr abschicken.
     already: |
-      🔸 Der Bot @{{bot.username}} bereits gestoppt.
+      🔸 Der Bot @{{bot.username}} wurde bereits gestoppt.
   group:
     group: |
       👫 Gruppen Einstellungen
     text: |
-      🔹 Sie können @{{bot.username}} in eine Gruppe hinzufügen, um nicht nur an Sie, sondern an alle Mitglieder der Gruppe zu beantworten.
+      🔹 Du kannst @{{bot.username}} in eine Gruppe hinzufügen, um nicht nur an Dich, sondern an alle Mitglieder der Gruppe die Nachrichten zu senden.
 
-      Fügen Sie den Bot in eine Gruppe hinzu und führen Sie den Befehl /authorize@{{bot.username}} aus.
+      Füge den Bot in eine Gruppe hinzu und führe den Befehl /authorize@{{bot.username}} aus.
 
-      ⚠️ Ein Bot kann nur in einer Gruppe aktiv sein. Sie können mehrere verschiedene Bots in derselbe Gruppe hinzufügen.
+      ⚠️ Ein Bot kann nur in einer Gruppe aktiv sein. Du kannst mehrere verschiedene Bots in derselbe Gruppe hinzufügen.
 
-      Ihre Gruppe: {%if bot.group%}{%if bot.group.link%}<a href="{{bot.group.link}}">{{bot.group.title|escape}}</a>{%else%}{{bot.group.title|escape}}{%endif%}{%else%}<i>Keine</i>{%endif%}
+      Deine Gruppe: {%if bot.group%}{%if bot.group.link%}<a href="{{bot.group.link}}">{{bot.group.title|escape}}</a>{%else%}{{bot.group.title|escape}}{%endif%}{%else%}<i>Keine</i>{%endif%}
     leave: |
-      🚶 Deaktivieren & leave
+      🚶 Deaktivieren & Verlassen
     leaved: |
       ⚠️ Der Bot wurde aus der Gruppe entfernt.
   types:
